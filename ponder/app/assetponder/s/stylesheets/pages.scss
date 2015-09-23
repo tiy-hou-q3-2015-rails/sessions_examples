@@ -1,0 +1,20 @@
+$bad: #C0392B;
+$good: #2ECC71;
+
+.flashyflash {
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.alert {
+  background: $bad;
+  border: 1px solid darken($bad, 20%);
+  @extend .flashyflash;
+}
+
+.notice {
+  background: $good;
+  border: 1px solid darken($good, 20%);
+  @extend .flashyflash;
+}

@@ -1,0 +1,7 @@
+<h1>Thoughts</h1>
+
+<% @deep_thoughts.each do |deep_thought| %>
+  <blockquote>
+    <%= link_to deep_thought.text, deep_thought_path(id: deep_thought.id) %> <cite><%= deep_thought.posted_at %></cite>
+  </blockquote>
+<% end %>
